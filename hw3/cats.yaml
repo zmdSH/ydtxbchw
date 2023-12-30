@@ -1,0 +1,12 @@
+# 数据集根路径
+path: C:\data\study\study2023-2\jisuanbiancheng\yolov5-master\data
+#训练集
+train: images/train
+#验证集
+val: images/val
+test:
+nc: 2
+# Classes
+names: 
+  0 : cat
+  1 : notcat

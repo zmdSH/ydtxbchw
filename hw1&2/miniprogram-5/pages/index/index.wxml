@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="container">
+  <view class="input-container">
+    <input class="input" placeholder="请输入文字内容" bindinput="bindInput" />
+  </view>
+
+  <view class="received-texts">{{receivedTexts}}
+  </view>
+<view>
+  <image src="{{imageUrl}}" mode="aspectFit"></image>
+</view>
+
+  <view class="photo-container">
+    <image class="photo-image" src="{{imagePath}}" />
+    <button class="photo-btn" bindtap="takePhoto">拍摄照片</button>
+  </view>
+  <button class="submit-btn" bindtap="submitData">提交</button>
+  <button class="receive-btn" bindtap="receivetexts">接收文字
+  </button>
+  <button class="receiveimg-btn" bindtap="receiveimg">接收图片
+  </button>
+</view>
+
+
